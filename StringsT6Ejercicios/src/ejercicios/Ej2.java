@@ -23,6 +23,8 @@ debe mostrar una cadena con los caracteres acertados en sus lugares respectivos 
 			jugador2=lee.next();
 			System.out.println(jugador1.compareTo(jugador2)==0 ? "Has ganado, adivinaste la contraseña!" : "Mejor intentalo de nuevo");
 		} while (jugador1.compareTo(jugador2)!=0);
-	}
+		
+		lee.close();
+	}//fin del main
 
 }
