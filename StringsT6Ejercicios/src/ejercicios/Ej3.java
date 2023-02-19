@@ -11,10 +11,13 @@ public class Ej3 {
 		int cuentaEsp=0;
 		
 		System.out.println("Por favor introduzca una frase: ");
-		fraseUser=lee.next();
+		fraseUser=lee.nextLine();//DEBO LEER LAS FRASES CON NEXTLINE PORQUE EL NEXT SOLO LEE UNA PALABRA
 		for(int i=0;i<fraseUser.length();i++) {
-			System.out.println(i);
-			}
+		if (fraseUser.charAt(i)== ' ') {
+			cuentaEsp++;
+		}
+		}
+		System.out.println(cuentaEsp);
 		}
 		
 		
