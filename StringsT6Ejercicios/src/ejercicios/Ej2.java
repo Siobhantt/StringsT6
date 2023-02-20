@@ -19,7 +19,7 @@ debe mostrar una cadena con los caracteres acertados en sus lugares respectivos 
 		
 		System.out.println("Jugador 1, por favor introduzca la contraseña: ");
 		jugador1=lee.next();
-		Utils.clearConsole2();
+		Utils.clearConsole2(); //fincion de la profe
 		System.out.println("Jugador2, es su turno de adivinar la contraseña. ");
 		do {
 			jugador2=lee.next();
