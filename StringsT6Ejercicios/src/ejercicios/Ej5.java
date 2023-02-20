@@ -8,9 +8,9 @@ public class Ej5 {
  *  escrita con cualquier combinación de mayúsculas/minúsculas. 
  * La cadena “fin” no aparecerá en la frase final.*/
 	public static void main(String[] args) {
-		String palabra;
-		String frase = "";
-		String fin = "fin";
+		String palabra; //aqui leeremos la palabra que se va añadfir en la frase
+		String frase = ""; //iniciamos frase en cadena vacia para ir concatenando las palabras que introduzca el user
+		String fin = "fin"; //la palabra fin para finalizar el bucle
 		Scanner lee = new Scanner(System.in);
 		
 		System.out.println("Por favor introduzca una frase palabra por palabra: ");

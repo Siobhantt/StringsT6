@@ -10,9 +10,8 @@ public class Pruebas {
 		System.out.println("Por favor introduzca la palabra que quiere poner al reves: ");
 	palabra = lee.nextLine();
 			
-	
-		System.out.println(FuncionEj4.alReves(palabra));
-
+		System.out.println("La palabra al reves es: "+FuncionEj4.alReves(palabra));
+lee.close();
 	}
 
 }
