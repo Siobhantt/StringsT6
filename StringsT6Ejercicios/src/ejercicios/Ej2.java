@@ -2,6 +2,8 @@ package ejercicios;
 
 import java.util.Scanner;
 
+import examples.Utils;
+
 public class Ej2 {
 /*Diseña el juego “Acierta la contraseña”. 
  * La mecánica del juego es la siguiente: el primer jugador introduce la contraseña; a continuación, el segundo jugador debe teclear palabras hasta que la acierte.
@@ -17,7 +19,7 @@ debe mostrar una cadena con los caracteres acertados en sus lugares respectivos 
 		
 		System.out.println("Jugador 1, por favor introduzca la contraseña: ");
 		jugador1=lee.next();
-		
+		Utils.clearConsole2();
 		System.out.println("Jugador2, es su turno de adivinar la contraseña. ");
 		do {
 			jugador2=lee.next();
