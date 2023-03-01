@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Ej10Descodificador {
 
 	public static void main(String[] args) {
-
-		char conjunto1[] = { 'e', 'i', 'k', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v' };
-		char conjunto2[] = { 'p', 'v', 'i', 'u', 'm', 't', 'e', 'r', 'k', 'q', 's' };
+		
+		char conjunto1[] = { 'p', 'v', 'i', 'u', 'm', 't', 'e', 'r', 'k', 'q', 's' };
+		char conjunto2[] = { 'e', 'i', 'k', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v' };
 		String palabra;// donde voy a guardar lo que introduzca el usuario
 		String palabraCodificada = ""; // Donde guardare lo que se va codificar cracter a caracter
 		char codificado;// el caracter codificado
