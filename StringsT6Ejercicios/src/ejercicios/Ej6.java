@@ -9,10 +9,10 @@ public class Ej6 {
 	 */
 	public static void main(String[] args) {
 
-		String palabra;
-		String frase;
-		int contadorPalabra = 0;
-		int inicio = 0;
+		String palabra;//Aqui guardaremos las palabras
+		String frase;//aqui se guardarán las frase
+		int contadorPalabra = 0; //El contador de las palabras
+		int inicio = 0;//Para controlar el bucle
 		Scanner lee = new Scanner(System.in);
 		int posicion;
 
@@ -21,13 +21,13 @@ public class Ej6 {
 
 		System.out.println("Por favor introduzca la palabra a buscar: ");
 		palabra = lee.next();
-
+		//En la posicion guardaremos donde empiece la palabra en la frase
 		posicion = frase.indexOf(palabra, inicio);
 		
-		while (posicion >= 0) {
+		while (posicion >= 0) {//mientras la posicion sea mayor a 0 se aumenta el contador de la palabra
 			contadorPalabra++;
-			inicio += posicion + palabra.length();
-		posicion = frase.indexOf(palabra, inicio);
+			inicio += posicion + palabra.length(); //y luego al inicio se le suma la posicion de donde empieza mas la longitud de la palabra para que avance en la frase
+		posicion = frase.indexOf(palabra, inicio); 
 		}
 
 		System.out.println(palabra + " se encuentra en la frase introducida, " + contadorPalabra + " veces.");
