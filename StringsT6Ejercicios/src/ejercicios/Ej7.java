@@ -15,16 +15,17 @@ public class Ej7 {
 
 	public static void main(String[] args) {
 
-		String frase;
+		String frase; //Donde se guardará la frase
 		//int longitud;
 		//char tablaFrase[];
-		String fraseAlreves;
+		String fraseAlreves; //Para guardar la frasevolteada
 		Scanner lee = new Scanner(System.in);
 		
 		System.out.println("Por favor introduzca la frase a verificar: ");
 		frase = lee.nextLine(); //leemos la frase
-		frase = frase.replace(" ", "");
-		fraseAlreves= FuncionEj4.alReves(frase);
+		frase = frase.replace(" ", "");//Remplazamos los espacios por la nada
+		fraseAlreves= FuncionEj4.alReves(frase);//Ponemos toda la frase al reves
+		//en caso de que la frase al reves sea igual que la frase normal imprimimos si es palindromo o no
 		System.out.println(frase.equals(fraseAlreves)? "La frase es palindromo" : "La frase NO es palindromo");
 		
 	/*	frase = frase.replace(" ", ""); //reemplazamos los espacios en blanco por espacios vacios
@@ -39,8 +40,9 @@ public class Ej7 {
 		System.out.println(Arrays.toString(alReves));
 		System.out.println(Arrays.equals(tablaFrase, alReves) ? "La frase es palindromo" : "La frase NO es palindromo");
 
-		lee.close();
+		
 	*/
+		lee.close();
 	}
 
 }
