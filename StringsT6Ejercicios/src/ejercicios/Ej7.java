@@ -39,8 +39,6 @@ public class Ej7 {
 		System.out.println(Arrays.toString(tablaFrase));
 		System.out.println(Arrays.toString(alReves));
 		System.out.println(Arrays.equals(tablaFrase, alReves) ? "La frase es palindromo" : "La frase NO es palindromo");
-
-		
 	*/
 		lee.close();
 	}
