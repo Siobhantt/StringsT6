@@ -12,8 +12,8 @@ public class FuncionDesordena {
 
 		while (indice < frase.length()) {//mientras la palabra no termine o sea, mientras el indice sea menor a la longitud
 			indiceAleatorio = (int) (Math.random() * (frase.length()));//generamos un indice aleatorio y lo guardamos en la variable
-			if (tablaDesorden[indiceAleatorio] == 'º') {//si lo que este guardado en el indice aleatorio de la tabla es igual a ººº entonces esta repetido
-				tablaDesorden[indiceAleatorio] = frase.charAt(indice);//Por ende generamos otro
+			if (tablaDesorden[indiceAleatorio] == 'º') {//si lo que este guardado en el indice aleatorio de la tabla es igual a ººº entonces esa posicion esta vacia
+				tablaDesorden[indiceAleatorio] = frase.charAt(indice);//Por ende guardamos la letra
 				indice++;//aumentamos el indice del recorrido de la plabra para que avance
 			}
 		} // fin del while
