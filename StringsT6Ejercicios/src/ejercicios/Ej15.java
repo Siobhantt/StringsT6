@@ -21,7 +21,6 @@ public class Ej15 {
 			System.out.println(frase1.equals(frase2) ? "Felicidades, acertaste!" : "Intentalo de nuevo :("); //en caso que si, una felicitacion, que no, animo para un nuevo intento
 		}while(!frase1.equals(frase2));
 		lee.close();
-		
 	}
 	public static String desordena2(String frase) {
 		int indice = 0;//indice para controlar el flujo de la palabra
@@ -32,9 +31,7 @@ public class Ej15 {
 
 		while (indice < frase.length()) {//mientras la palabra no termine o sea, mientras el indice sea menor a la longitud
 			indiceAleatorio = (int) (Math.random() * (frase.length()));//generamos un indice aleatorio y lo guardamos en la variable
-			if(tablaDesorden[indiceAleatorio]!= 'º') {
-				
-			}
+			
 			if (tablaDesorden[indiceAleatorio] == 'º') {//si lo que este guardado en el indice aleatorio de la tabla es igual a ººº entonces esta vacio
 				tablaDesorden[indiceAleatorio] = frase.charAt(indice);//Por ende guardamos la letra
 				indice++;//aumentamos el indice del recorrido de la palabra para que avance
@@ -42,5 +39,9 @@ public class Ej15 {
 		} // fin del while
 		desordenada = String.valueOf(tablaDesorden);//en desordenada guardamos la tranformacion del array a cadena
 		return desordenada;//devolvemos el desorden
+	}
+	
+	public static String aciertos() {
+		
 	}
 }
