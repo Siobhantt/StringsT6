@@ -41,7 +41,4 @@ public class Ej15 {
 		return desordenada;//devolvemos el desorden
 	}
 	
-	public static String aciertos() {
-		
-	}
 }
